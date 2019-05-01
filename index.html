@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+         Pure JavaScript
+</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <table>
+        <tr>
+            <td>
+                <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+                    <div>
+                        <label>Reg No*</label><label class="validation-error hide" id="noValidationError">This field is required.</label>
+                        <input type="text" name="no" id="no">
+                    </div>
+                    <div>
+                        <label>Department</label>
+                        <input type="text" name="dept" id="dept">
+                    </div>
+                    <div>
+                        <label>Level Of Study</label>
+                        <input type="text" name="level" id="level">
+                    </div>
+                    <div>
+                        <label>College</label>
+                        <input type="text" name="college" id="college">
+                    </div>
+                    <div  class="form-action-buttons">
+                        <input type="submit" value="Submit">
+                    </div>
+                </form>
+            </td>
+            <td>
+                <table class="list" id="employeeList">
+                    <thead>
+                        <tr>
+                            <th>Reg No</th>
+                            <th>Department</th>
+                            <th>Level of Study</th>
+                            <th>College</th>
+                           
+                           
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <script src="main.js"></script>
+</body>
+
+</html>
